@@ -9,7 +9,13 @@
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
         <!-- Ant Design Vue: a-input-search và a-button -->
-        <a-input-search allow-clear placeholder="Tìm kiếm thông minh..." style="width:320px" @search="onSearch"/>
+        <a-input-search
+          v-model:value="search"
+          allow-clear
+          placeholder="Tìm kiếm (gọi API)"
+          style="width:320px"
+          @search="onSearch"
+        />
         <a-button type="primary" @click="goAdd">+ Thêm</a-button>
         <a-button>Nhập từ Excel</a-button>
       </div>
@@ -18,7 +24,7 @@
       <div class="table-card">
         <!-- Bảng danh sách khách hàng, có phân trang -->
         <div ref="tableWrap" class="table-wrap">
-          <SimpleCustomerTable :items="dataPaging" :loading="loading" v-model="selected" />
+          <SimpleCustomerTable :items="dataPaging" :loading="loading" v-model="selected" @edit="onEdit" @delete="onDelete" />
         </div>
         <!-- Footer phân trang ngay dưới bảng -->
         <div class="table-footer">
@@ -55,8 +61,8 @@
 import Header from '../components/Header.vue';
 import SimpleCustomerTable from '../components/SimpleCustomerTable.vue';
 import Footer from '../components/Footer.vue';
-import { ref, computed, onMounted, onBeforeUnmount, nextTick } from 'vue';
-import { getCustomersPaged, searchCustomers } from '../api/customer';
+import { ref, computed, onMounted, onBeforeUnmount, nextTick, watch } from 'vue';
+import { getCustomersPaged, searchCustomers, deleteCustomer } from '../api/customer';
 import { useRouter } from 'vue-router';
 
 const search = ref('');
@@ -104,12 +110,35 @@ async function onSearch(val) {
   current.value = 1;
   await fetchData();
 }
+// Tìm kiếm API theo thời gian thực (debounce)
+let searchDebounce;
+watch(search, (val) => {
+  clearTimeout(searchDebounce);
+  searchDebounce = setTimeout(async () => {
+    current.value = 1;
+    await fetchData();
+  }, 350);
+});
 async function onPageChange(page) {
   current.value = page;
   await fetchData();
 }
 function goAdd() {
   router.push({ name: 'CustomerAdd' });
+}
+function onEdit(row) {
+  router.push({ name: 'CustomerEdit', params: { id: row.id }, state: { customer: row } });
+}
+async function onDelete(row) {
+  if (!row?.id) return;
+  if (!confirm('Xóa khách hàng này?')) return;
+  try {
+    await deleteCustomer(row.id);
+    await fetchData();
+  } catch (e) {
+    console.error(e);
+    alert('Xóa thất bại');
+  }
 }
 function onPageSizeChange(currentPage, size) {
   pageSize.value = size;
@@ -118,10 +147,12 @@ function onPageSizeChange(currentPage, size) {
 
 // Hiển thị "Bản ghi trên trang" cho dropdown kích thước trang
 const pageSizeOptions = computed(() => [10, 20, 50, 100].map(n => ({ value: n, label: `${n} Bản ghi trên trang` })));
-function onPageSizeSelect(val) {
+async function onPageSizeSelect(val) {
   pageSize.value = val;
   current.value = 1;
-  nextTick().then(recalcBodyHeight);
+  await fetchData();
+  await nextTick();
+  recalcBodyHeight();
 }
 
 // Dải hiển thị "1 đến 100"
@@ -172,7 +203,7 @@ onBeforeUnmount(() => {
 .table-wrap {
   flex: 1 1 auto;
   min-height: 0;
-  overflow: hidden; /* để a-table tự cuộn nội bộ */
+  overflow: auto; /* cho phép cuộn khi nhiều bản ghi */
 }
 .table-footer {
   display: flex;

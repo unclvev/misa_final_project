@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|solutionrelative:salesmanagementsystem.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|solutionrelative:salesmanagementsystem.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|solutionrelative:salesmanagementsystem.infrastructure\\salesmanagementsystem.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|solutionrelative:salesmanagementsystem.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D2C9936-D4CE-4851-9E27-F7E127A400C0}|SalesManagementSystem.Domain\\SalesManagementSystem.Domain.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.domain\\entity\\customertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D2C9936-D4CE-4851-9E27-F7E127A400C0}|SalesManagementSystem.Domain\\SalesManagementSystem.Domain.csproj|solutionrelative:salesmanagementsystem.domain\\entity\\customertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -98,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ICustomerRepository.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerRepository.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerRepository.cs",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CsvController.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Api\\Controllers\\CsvController.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Api\\Controllers\\CsvController.cs",
@@ -131,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CustomerRespone.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Dtos\\CustomerDto\\CustomerRespone.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Dtos\\CustomerDto\\CustomerRespone.cs",
@@ -144,32 +144,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Services\\CustomerService.cs",
               "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CustomerService.cs",
               "RelativeToolTip": "SalesManagementSystem.Application\\Services\\CustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAswFcAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T02:53:55.743Z"
+              "WhenOpened": "2025-10-29T02:53:55.743Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Api\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Api\\Controllers\\CustomerController.cs",
               "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Api\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "SalesManagementSystem.Api\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwCMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwDYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T02:58:05.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CustomerManagementContext.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
@@ -182,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
@@ -195,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Api\\Controllers\\AuthController.cs",
@@ -208,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "SalesManagementSystem.Infrastructure.csproj",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
               "RelativeDocumentMoniker": "SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
@@ -220,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ICustomerService.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
@@ -232,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CsvService.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CsvService.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Services\\CsvService.cs",
@@ -244,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ICsvService.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
@@ -256,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CreateCustomerRequest.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
@@ -268,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ICustomerTypeRepository.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerTypeRepository.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerTypeRepository.cs",

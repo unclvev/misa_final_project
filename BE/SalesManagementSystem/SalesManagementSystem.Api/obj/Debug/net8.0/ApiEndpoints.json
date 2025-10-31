@@ -85,6 +85,22 @@
   },
   {
     "ContainingType": "SalesManagementSystem.Api.Controllers.CustomerController",
+    "Method": "GetCustomer",
+    "RelativePath": "api/Customer/GetCustomer/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesManagementSystem.Api.Controllers.CustomerController",
     "Method": "GetCustomersPaged",
     "RelativePath": "api/Customer/GetCustomersPaged",
     "HttpMethod": "GET",

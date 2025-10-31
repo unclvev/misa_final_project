@@ -17,6 +17,25 @@ namespace SalesManagementSystem.Api.Controllers
         {
             _customerService = customerService;
         }
+        [HttpGet("GetCustomer/{id}")]
+        public async Task<IActionResult> GetCustomer(ulong id)
+        {
+            try
+            {
+                var customer = await _customerService.GetById(id);
+                if (customer == null) return NotFound();
+                return Ok(customer);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    message = "An error occurred while processing your request.",
+                    error = ex.Message,
+                    innerException = ex.InnerException?.Message
+                });
+            }
+        }
 
 
         [HttpGet("GetAllCustomer")]

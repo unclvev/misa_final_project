@@ -20,4 +20,7 @@ export const updateCustomer = (id, payload) =>
 export const deleteCustomer = (id) =>
   Http.delete(`/Customer/DeleteCustomer/${id}`).then((res) => res.data);
 
+export const getCustomerById = (id) =>
+  Http.get(`/Customer/GetCustomer/${id}`).then((res) => res.data);
+
 

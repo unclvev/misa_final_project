@@ -7,6 +7,7 @@
         <div class="form-group">
           <label>Tên khách hàng <span class="star">*</span></label>
           <input v-model="localForm.name" required type="text" />
+          <div v-if="errors?.name" class="error-text">{{ errors.name }}</div>
         </div>
         <div class="form-group">
           <label>Loại khách hàng</label>
@@ -15,10 +16,12 @@
         <div class="form-group">
           <label>Mã số thuế</label>
           <input v-model="localForm.tax" type="text" />
+          <div v-if="errors?.tax" class="error-text">{{ errors.tax }}</div>
         </div>
         <div class="form-group">
           <label>Email</label>
           <input v-model="localForm.email" type="email" />
+          <div v-if="errors?.email" class="error-text">{{ errors.email }}</div>
         </div>
         <div class="form-group">
           <label>Ngành nghề</label>
@@ -77,8 +80,9 @@
           <input v-model="localForm.field" type="text" placeholder="null" />
         </div>
         <div class="form-group">
-          <label>Điện thoại</label>
+          <label>Điện thoại <span class="star">*</span></label>
           <input v-model="localForm.phone" type="tel" />
+          <div v-if="errors?.phone" class="error-text">{{ errors.phone }}</div>
         </div>
         <div class="form-group">
           <label>Nguồn gốc</label>
@@ -127,7 +131,8 @@
 import { reactive, watch } from 'vue';
 const props = defineProps({
   modelValue: { type: Object, default: () => ({}) },
-  showButton: { type: Boolean, default: true }
+  showButton: { type: Boolean, default: true },
+  errors: { type: Object, default: () => ({}) }
 });
 const emit = defineEmits(['update:modelValue', 'submit']);
 const localForm = reactive({ ...props.modelValue });
@@ -206,6 +211,11 @@ function submitForm() {
   font-style: normal;
   margin-left: 2px;
   border: 1px solid #dde;
+}
+.error-text {
+  color: #dc2626;
+  font-size: 12px;
+  margin-top: 4px;
 }
 .form-footer {
   display: flex;

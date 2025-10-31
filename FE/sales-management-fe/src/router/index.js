@@ -5,6 +5,7 @@ import CustomerAdd from '../pages/CustomerAdd.vue';
 const routes = [
   { path: '/customers', name: 'CustomerList', component: CustomerList },
   { path: '/customers/add', name: 'CustomerAdd', component: CustomerAdd },
+  { path: '/customers/:id/edit', name: 'CustomerEdit', component: CustomerAdd },
   { path: '/', redirect: '/customers' },
 ];
 export default createRouter({

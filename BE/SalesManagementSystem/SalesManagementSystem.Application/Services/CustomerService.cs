@@ -140,6 +140,35 @@ namespace SalesManagementSystem.Application.Services
             return result;
         }
 
+        public async Task<CustomerRespone?> GetById(ulong id)
+        {
+            var c = await _customerRepository.GetByIdAsync(id);
+            if (c == null) return null;
+            return new CustomerRespone
+            {
+                Id = c.Id,
+                CustomerTypeId = c.CustomerTypeId,
+                CustomerCode = c.CustomerCode,
+                FullName = c.FullName,
+                Email = c.Email,
+                TaxCode = c.TaxCode,
+                ShippingAddress = c.ShippingAddress,
+                Phone = c.Phone,
+                LastPurchaseDate = c.LastPurchaseDate,
+                ProductsSummary = c.ProductsSummary,
+                LatestProductName = c.LatestProductName,
+                CreatedAt = c.CreatedAt,
+                UpdatedAt = c.UpdatedAt,
+                DeletedAt = c.DeletedAt,
+                CustomerType = c.CustomerType != null ? new CustomerTypeDto
+                {
+                    Id = c.CustomerType.Id,
+                    TypeName = c.CustomerType.TypeName,
+                    Description = c.CustomerType.Description
+                } : null
+            };
+        }
+
         public async Task<PagedResponse<List<CustomerRespone>>> GetCustomersPaged(int page, int pageSize)
         {
             var (items, total) = await _customerRepository.GetPagedAsync(page, pageSize);
