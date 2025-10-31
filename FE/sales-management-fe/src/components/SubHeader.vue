@@ -17,8 +17,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem 0.5rem;
-  background: #fff;
+  background: #DDDDDD;
   border-bottom: 1px solid #ececec;
+  
 }
 .title h2 {
   margin: 0;

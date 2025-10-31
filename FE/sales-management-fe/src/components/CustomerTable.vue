@@ -2,12 +2,14 @@
   <!-- Sử dụng a-table của Ant Design Vue -->
   <a-table
     :columns="columns"
-    :data-source="dataSource"
+    :data-source="displayData"
     :pagination="false"
     row-key="id"
     bordered
     size="middle"
-    :scroll="{ x: 'max-content' }"
+    :scroll="{ x: 'max-content', y: effectiveBodyHeight }"
+    :locale="{ emptyText: '' }"
+    :row-class-name="getRowClassName"
   >
     <!-- Slot cho cột số điện thoại: thêm icon và hiển thị đẹp -->
     <template #bodyCell="{ column, record }">
@@ -35,7 +37,8 @@
         <span style="max-width:120px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" :title="record.boughtNames">{{ record.boughtNames || '-' }}</span>
       </template>
       <template v-else>
-        {{ record[column.dataIndex] || '-' }}
+        <span v-if="!record.__placeholder">{{ record[column.dataIndex] || '-' }}</span>
+        <span v-else></span>
       </template>
     </template>
   </a-table>
@@ -44,9 +47,11 @@
 <script setup>
 // Import icon cho cột điện thoại từ ant-design icons-vue
 import { PhoneOutlined as IconPhone } from '@ant-design/icons-vue';
-import { defineProps, computed } from 'vue';
+import { defineProps, ref, onMounted, onBeforeUnmount, computed } from 'vue';
 const props = defineProps({
-  dataSource: { type: Array, required: true, default: () => [] }
+  dataSource: { type: Array, required: true, default: () => [] },
+  pageSize: { type: Number, default: 20 },
+  bodyHeight: { type: Number, default: 0 }
 });
 
 // Khai báo các cột bảng đúng thứ tự như trong ảnh mẫu
@@ -61,6 +66,43 @@ const columns = [
   { title: 'Hàng hóa đã mua', dataIndex: 'boughtGoods', width: 210 },
   { title: 'Tên hàng hóa đã mua', dataIndex: 'boughtNames', width: 300 },
 ];
+
+// Tính chiều cao phần thân bảng để cân đối theo màn hình
+const tableBodyHeight = ref(420);
+function calculateTableBodyHeight() {
+  // Trừ đi chiều cao header, subheader, padding, thanh phân trang, footer (ước lượng)
+  const viewportH = window.innerHeight || 800;
+  const estimatedOtherHeights = 260; // điều chỉnh nếu cần
+  const height = Math.max(280, viewportH - estimatedOtherHeights);
+  tableBodyHeight.value = height;
+}
+onMounted(() => {
+  calculateTableBodyHeight();
+  window.addEventListener('resize', calculateTableBodyHeight);
+});
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', calculateTableBodyHeight);
+});
+
+const effectiveBodyHeight = computed(() => {
+  return props.bodyHeight && props.bodyHeight > 0 ? props.bodyHeight : tableBodyHeight.value;
+});
+
+// Bổ sung các hàng trống để phần còn lại là khoảng trắng nếu ít dữ liệu
+const displayData = computed(() => {
+  const data = Array.isArray(props.dataSource) ? props.dataSource : [];
+  const missing = Math.max(0, props.pageSize - data.length);
+  if (missing === 0) return data;
+  const placeholders = Array.from({ length: missing }, (_, idx) => ({
+    id: `placeholder-${idx}`,
+    __placeholder: true
+  }));
+  return [...data, ...placeholders];
+});
+
+function getRowClassName(record) {
+  return record.__placeholder ? 'placeholder-row' : '';
+}
 </script>
 
 <style scoped>
@@ -80,5 +122,12 @@ const columns = [
 .customer-table tr:hover {
   background: #f5fbff;
   cursor: pointer;
+}
+/* Hàng trống không có hover và nền giữ trắng để tạo cảm giác khoảng trắng */
+:deep(.placeholder-row) td {
+  background: #fff !important;
+}
+:deep(.placeholder-row):hover > td {
+  background: #fff !important;
 }
 </style>

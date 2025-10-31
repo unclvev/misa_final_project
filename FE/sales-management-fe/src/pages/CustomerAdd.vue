@@ -6,9 +6,9 @@
         <h2>Thêm Khách Hàng</h2>
       </template>
       <template #actions>
-        <button class="btn-submit" @click="submit('normal')">Lưu</button>
-        <button class="btn-submit-outline" @click="submit('add')">Lưu và thêm</button>
         <button class="btn-cancel" @click="cancel">Hủy bỏ</button>
+        <button class="btn-submit-outline" @click="submit('add')">Lưu và thêm</button>
+        <button class="btn-submit" @click="submit('normal')">Lưu</button>
       </template>
     </SubHeader>
     <section class="section">
