@@ -9,3 +9,4 @@ D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Domain\obj\D
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Domain\obj\Debug\net8.0\refint\SalesManagementSystem.Domain.dll
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Domain\obj\Debug\net8.0\SalesManagementSystem.Domain.pdb
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Domain\obj\Debug\net8.0\ref\SalesManagementSystem.Domain.dll
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Domain\obj\Debug\net8.0\SalesManagementSystem.Domain.sourcelink.json

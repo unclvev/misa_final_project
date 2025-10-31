@@ -3,8 +3,8 @@ import CustomerList from '../pages/CustomerList.vue';
 import CustomerAdd from '../pages/CustomerAdd.vue';
 
 const routes = [
-  { path: '/customers', component: CustomerList },
-  { path: '/customers/add', component: CustomerAdd },
+  { path: '/customers', name: 'CustomerList', component: CustomerList },
+  { path: '/customers/add', name: 'CustomerAdd', component: CustomerAdd },
   { path: '/', redirect: '/customers' },
 ];
 export default createRouter({

@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|solutionrelative:salesmanagementsystem.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|solutionrelative:salesmanagementsystem.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.api\\controllers\\csvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|solutionrelative:salesmanagementsystem.api\\controllers\\csvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|solutionrelative:salesmanagementsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.infrastructure\\repositorys\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|solutionrelative:salesmanagementsystem.infrastructure\\repositorys\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.infrastructure\\models\\customermanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|solutionrelative:salesmanagementsystem.infrastructure\\models\\customermanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.application\\dtos\\customerdto\\customerrespone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|solutionrelative:salesmanagementsystem.application\\dtos\\customerdto\\customerrespone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,24 +43,12 @@
       "RelativeMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|solutionrelative:salesmanagementsystem.application\\interfaces\\irepositorys\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|solutionrelative:salesmanagementsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.application\\services\\csvservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|solutionrelative:salesmanagementsystem.application\\services\\csvservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.api\\controllers\\csvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|solutionrelative:salesmanagementsystem.api\\controllers\\csvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.application\\interfaces\\irepositorys\\icustomertyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|solutionrelative:salesmanagementsystem.application\\interfaces\\irepositorys\\icustomertyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.infrastructure\\repositorys\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|solutionrelative:salesmanagementsystem.infrastructure\\repositorys\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.application\\interfaces\\iservices\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,20 +59,8 @@
       "RelativeMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|solutionrelative:salesmanagementsystem.infrastructure\\salesmanagementsystem.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|solutionrelative:salesmanagementsystem.application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{756736B1-CECB-4CD8-97B1-FBCD576B3639}|SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj|solutionrelative:salesmanagementsystem.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D2C9936-D4CE-4851-9E27-F7E127A400C0}|SalesManagementSystem.Domain\\SalesManagementSystem.Domain.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.domain\\entity\\customertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D2C9936-D4CE-4851-9E27-F7E127A400C0}|SalesManagementSystem.Domain\\SalesManagementSystem.Domain.csproj|solutionrelative:salesmanagementsystem.domain\\entity\\customertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.infrastructure\\models\\customermanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3AB6926-70E3-4DB4-B4D5-03AC8A9DE0CB}|SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj|solutionrelative:salesmanagementsystem.infrastructure\\models\\customermanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BC0F05B-4D5E-47B8-8FB7-A3AFFF3AEF84}|SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj|d:\\misa\\finalproject\\be\\salesmanagementsystem\\salesmanagementsystem.application\\dtos\\customerdto\\updatecustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,93 +98,15 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateCustomerRequest.cs",
-              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
-              "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
-              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
-              "RelativeToolTip": "SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T03:01:32.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ICsvService.cs",
-              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
-              "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
-              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
-              "RelativeToolTip": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T03:01:27.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CsvService.cs",
-              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CsvService.cs",
-              "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Services\\CsvService.cs",
-              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CsvService.cs",
-              "RelativeToolTip": "SalesManagementSystem.Application\\Services\\CsvService.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAowCYBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T02:52:02.319Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
-              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
-              "RelativeToolTip": "SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAYwKYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T02:54:00.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ICustomerService.cs",
-              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
-              "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
-              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
-              "RelativeToolTip": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T02:53:54.741Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SalesManagementSystem.Infrastructure.csproj",
-              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
-              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
-              "RelativeToolTip": "SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-29T09:02:42.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ICustomerRepository.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerRepository.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerRepository.cs",
@@ -192,12 +114,11 @@
               "RelativeToolTip": "SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T03:15:03.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T03:15:03.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "CsvController.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Api\\Controllers\\CsvController.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Api\\Controllers\\CsvController.cs",
@@ -210,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "CustomerRespone.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Dtos\\CustomerDto\\CustomerRespone.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Dtos\\CustomerDto\\CustomerRespone.cs",
@@ -223,46 +144,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CustomerService.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Services\\CustomerService.cs",
-              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CustomerService.cs",
-              "RelativeToolTip": "SalesManagementSystem.Application\\Services\\CustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAA9AAAAAAAAAA==",
+              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CustomerService.cs*",
+              "RelativeToolTip": "SalesManagementSystem.Application\\Services\\CustomerService.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAArwDcAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T02:53:55.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Api\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Api\\Controllers\\CustomerController.cs",
               "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Api\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "SalesManagementSystem.Api\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBYAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T02:58:05.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerManagementContext.cs",
+              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
+              "RelativeDocumentMoniker": "SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
+              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
+              "RelativeToolTip": "SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T04:15:54.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
+              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
+              "RelativeToolTip": "SalesManagementSystem.Infrastructure\\Repositorys\\CustomerRepository.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAYwKYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T02:54:00.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Api\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Api\\Controllers\\AuthController.cs",
               "RelativeToolTip": "SalesManagementSystem.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowBQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T22:54:16.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SalesManagementSystem.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
+              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
+              "RelativeToolTip": "SalesManagementSystem.Infrastructure\\SalesManagementSystem.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-29T09:02:42.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
+              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
+              "RelativeToolTip": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T02:53:54.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CsvService.cs",
+              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CsvService.cs",
+              "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Services\\CsvService.cs",
+              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Services\\CsvService.cs",
+              "RelativeToolTip": "SalesManagementSystem.Application\\Services\\CsvService.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAowCYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:52:02.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ICsvService.cs",
+              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
+              "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
+              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
+              "RelativeToolTip": "SalesManagementSystem.Application\\Interfaces\\IServices\\ICsvService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T03:01:27.986Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "CreateCustomerRequest.cs",
+              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
+              "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
+              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
+              "RelativeToolTip": "SalesManagementSystem.Application\\Dtos\\CustomerDto\\CreateCustomerRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T03:01:32.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ICustomerTypeRepository.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerTypeRepository.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerTypeRepository.cs",
@@ -270,12 +277,11 @@
               "RelativeToolTip": "SalesManagementSystem.Application\\Interfaces\\IRepositorys\\ICustomerTypeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T02:46:10.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T02:46:10.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CustomerType.cs",
               "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Domain\\Entity\\CustomerType.cs",
               "RelativeDocumentMoniker": "SalesManagementSystem.Domain\\Entity\\CustomerType.cs",
@@ -283,21 +289,7 @@
               "RelativeToolTip": "SalesManagementSystem.Domain\\Entity\\CustomerType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:10:31.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CustomerManagementContext.cs",
-              "DocumentMoniker": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
-              "RelativeDocumentMoniker": "SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
-              "ToolTip": "D:\\MISA\\FinalProject\\BE\\SalesManagementSystem\\SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
-              "RelativeToolTip": "SalesManagementSystem.Infrastructure\\Models\\CustomerManagementContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T04:15:54.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T09:10:31.798Z"
             },
             {
               "$type": "Document",
@@ -309,8 +301,7 @@
               "RelativeToolTip": "SalesManagementSystem.Application\\Dtos\\CustomerDto\\UpdateCustomerRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T06:00:35.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T06:00:35.43Z"
             },
             {
               "$type": "Document",
@@ -322,8 +313,7 @@
               "RelativeToolTip": "SalesManagementSystem.Api\\Program.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAkwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T07:54:46.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T07:54:46.182Z"
             },
             {
               "$type": "Document",
@@ -335,8 +325,7 @@
               "RelativeToolTip": "SalesManagementSystem.Domain\\Entity\\Customer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:10:28.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T09:10:28.44Z"
             },
             {
               "$type": "Document",
@@ -348,8 +337,7 @@
               "RelativeToolTip": "SalesManagementSystem.Api\\SalesManagementSystem.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-29T08:55:13.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T08:55:13.264Z"
             },
             {
               "$type": "Document",
@@ -373,8 +361,7 @@
               "RelativeToolTip": "SalesManagementSystem.Application\\SalesManagementSystem.Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-29T09:02:45.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T09:02:45.33Z"
             },
             {
               "$type": "Document",

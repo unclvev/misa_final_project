@@ -8,9 +8,9 @@
         <span style="font-size:22px;font-weight:600">Khách hàng</span>
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
-        <!-- Ô tìm kiếm đặt tại đây -->
+        <!-- Ant Design Vue: a-input-search và a-button -->
         <a-input-search allow-clear placeholder="Tìm kiếm thông minh..." style="width:320px" @search="onSearch"/>
-        <a-button type="primary">+ Thêm</a-button>
+        <a-button type="primary" @click="goAdd">+ Thêm</a-button>
         <a-button>Nhập từ Excel</a-button>
       </div>
     </div>
@@ -18,7 +18,7 @@
       <div class="table-card">
         <!-- Bảng danh sách khách hàng, có phân trang -->
         <div ref="tableWrap" class="table-wrap">
-          <CustomerTable :dataSource="dataPaging" :pageSize="pageSize" :bodyHeight="bodyHeight" />
+          <SimpleCustomerTable :items="dataPaging" :loading="loading" v-model="selected" />
         </div>
         <!-- Footer phân trang ngay dưới bảng -->
         <div class="table-footer">
@@ -28,15 +28,17 @@
             <span class="debt"><b>Công nợ</b> {{ debtDisplay }}</span>
           </div>
           <div class="footer-right">
+            <!-- Ant Design Vue: a-select chọn kích thước trang -->
             <a-select
               class="page-size"
               :value="pageSize"
               :options="pageSizeOptions"
               @change="onPageSizeSelect"
             />
+            <!-- Ant Design Vue: a-pagination điều khiển phân trang -->
             <a-pagination
               :current="current"
-              :total="filteredCustomers.length"
+              :total="total"
               :pageSize="pageSize"
               :show-size-changer="false"
               @change="onPageChange"
@@ -51,48 +53,63 @@
 
 <script setup>
 import Header from '../components/Header.vue';
-import CustomerTable from '../components/CustomerTable.vue';
+import SimpleCustomerTable from '../components/SimpleCustomerTable.vue';
 import Footer from '../components/Footer.vue';
 import { ref, computed, onMounted, onBeforeUnmount, nextTick } from 'vue';
+import { getCustomersPaged, searchCustomers } from '../api/customer';
+import { useRouter } from 'vue-router';
 
 const search = ref('');
-const customers = ref([
-  {
-    id: 1,
-    type: 'NBH01',
-    code: 'KH001-testvquan3',
-    name: 'Công ty TNHH Hoa Mai',
-    tax: '-',
-    address: '-',
-    phone: '0555555553',
-    recentDate: '-',
-    boughtGoods: '-',
-    boughtNames: '-',
-  },
-  // { ... },
-]);
-// Bộ lọc tìm kiếm
-const filteredCustomers = computed(() => {
-  if (!search.value) return customers.value;
-  return customers.value.filter(c =>
-    c.name.toLowerCase().includes(search.value.toLowerCase())
-    || c.code.toLowerCase().includes(search.value.toLowerCase())
-    // ... trường khác nếu cần
-  );
-});
-// Phân trang
+const loading = ref(false);
+const selected = ref([]);
+const router = useRouter();
+const customers = ref([]);
 const current = ref(1);
 const pageSize = ref(20);
-const total = computed(() => filteredCustomers.value.length);
-const dataPaging = computed(() =>
-  filteredCustomers.value.slice((current.value - 1) * pageSize.value, current.value * pageSize.value)
-);
-function onSearch(val) {
+const total = ref(0);
+const dataPaging = computed(() => customers.value);
+async function fetchData() {
+  loading.value = true;
+  const page = current.value;
+  const size = pageSize.value;
+  const keyword = search.value?.trim();
+  try {
+    const res = await (keyword ? searchCustomers(keyword, page, size) : getCustomersPaged(page, size));
+    console.log('Customer API response:', res);
+  const list = Array.isArray(res?.data) ? res.data : res?.Data;
+  const meta = res?.meta || res?.Meta;
+  customers.value = (list || []).map((c) => ({
+    id: c.id ?? c.Id,
+    type: c.customerType?.typeName ?? c.CustomerType?.TypeName ?? '-',
+    code: c.customerCode ?? c.CustomerCode,
+    name: c.fullName ?? c.FullName,
+    tax: c.taxCode ?? c.TaxCode,
+    address: (c.shippingAddress ?? c.ShippingAddress) || '-',
+    phone: c.phone ?? c.Phone,
+    recentDate: c.lastPurchaseDate ?? c.LastPurchaseDate ?? '-',
+    boughtGoods: c.productsSummary ?? c.ProductsSummary ?? '-',
+    boughtNames: c.latestProductName ?? c.LatestProductName ?? '-',
+  }));
+  total.value = meta?.total ?? meta?.Total ?? customers.value.length;
+  } catch (err) {
+    console.error('Fetch customers failed:', err);
+    customers.value = [];
+    total.value = 0;
+  } finally {
+    loading.value = false;
+  }
+}
+async function onSearch(val) {
   search.value = val;
   current.value = 1;
+  await fetchData();
 }
-function onPageChange(page) {
+async function onPageChange(page) {
   current.value = page;
+  await fetchData();
+}
+function goAdd() {
+  router.push({ name: 'CustomerAdd' });
 }
 function onPageSizeChange(currentPage, size) {
   pageSize.value = size;
@@ -108,8 +125,8 @@ function onPageSizeSelect(val) {
 }
 
 // Dải hiển thị "1 đến 100"
-const rangeStart = computed(() => (filteredCustomers.value.length === 0 ? 0 : (current.value - 1) * pageSize.value + 1));
-const rangeEnd = computed(() => Math.min(filteredCustomers.value.length, current.value * pageSize.value));
+const rangeStart = computed(() => (total.value === 0 ? 0 : (current.value - 1) * pageSize.value + 1));
+const rangeEnd = computed(() => Math.min(total.value, current.value * pageSize.value));
 const debtDisplay = computed(() => 'đ');
 
 // Tính chiều cao phần thân bảng theo container để footer luôn hiển thị
@@ -129,6 +146,7 @@ onMounted(async () => {
   await nextTick();
   recalcBodyHeight();
   window.addEventListener('resize', onResize);
+  await fetchData();
 });
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onResize);

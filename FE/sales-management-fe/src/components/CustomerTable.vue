@@ -1,5 +1,5 @@
 <template>
-  <!-- Sử dụng a-table của Ant Design Vue -->
+  <!-- Ant Design Vue: sử dụng a-table làm bảng dữ liệu, a-tooltip cho tooltip -->
   <a-table
     :columns="columns"
     :data-source="displayData"
@@ -10,8 +10,9 @@
     :scroll="{ x: 'max-content', y: effectiveBodyHeight }"
     :locale="{ emptyText: '' }"
     :row-class-name="getRowClassName"
+    :loading="loading"
   >
-    <!-- Slot cho cột số điện thoại: thêm icon và hiển thị đẹp -->
+    <!-- Ant Design Vue: Slot bodyCell để tuỳ biến nội dung từng cột -->
     <template #bodyCell="{ column, record }">
       <template v-if="column.dataIndex === 'phone'">
         <a-tooltip :title="record.phone ? record.phone : ''">
@@ -45,13 +46,14 @@
 </template>
 
 <script setup>
-// Import icon cho cột điện thoại từ ant-design icons-vue
+// Ant Design Icons Vue: import IconPhone dùng trong cột điện thoại
 import { PhoneOutlined as IconPhone } from '@ant-design/icons-vue';
 import { defineProps, ref, onMounted, onBeforeUnmount, computed } from 'vue';
 const props = defineProps({
   dataSource: { type: Array, required: true, default: () => [] },
   pageSize: { type: Number, default: 20 },
-  bodyHeight: { type: Number, default: 0 }
+  bodyHeight: { type: Number, default: 0 },
+  loading: { type: Boolean, default: false }
 });
 
 // Khai báo các cột bảng đúng thứ tự như trong ảnh mẫu

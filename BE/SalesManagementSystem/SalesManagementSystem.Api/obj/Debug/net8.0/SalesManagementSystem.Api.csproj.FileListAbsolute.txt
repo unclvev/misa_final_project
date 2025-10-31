@@ -59,3 +59,4 @@ D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Api\bin\Debu
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Api\bin\Debug\net8.0\CsvHelper.dll
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Api\obj\Debug\net8.0\SalesManagementSystem.Api.sourcelink.json

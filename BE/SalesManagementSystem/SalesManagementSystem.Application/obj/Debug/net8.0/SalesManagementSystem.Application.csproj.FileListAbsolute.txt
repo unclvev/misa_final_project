@@ -13,3 +13,4 @@ D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\bin\Debug\net8.0\SalesManagementSystem.Domain.pdb
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesManagementSystem.Application.csproj.AssemblyReference.cache
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesMan.6BA7E359.Up2Date
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesManagementSystem.Application.sourcelink.json

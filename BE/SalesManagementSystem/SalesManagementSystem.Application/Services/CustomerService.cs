@@ -11,6 +11,7 @@ using SalesManagementSystem.Domain.Entity;
 using SalesManagementSystem.Application.Dtos.Paging;
 using System.IO;
 using System.Text;
+using SalesManagementSystem.Application.Dtos;
 
 namespace SalesManagementSystem.Application.Services
 {
@@ -38,12 +39,26 @@ namespace SalesManagementSystem.Application.Services
 
             return new CustomerRespone
             {
+                Id = added.Id,
+                CustomerTypeId = added.CustomerTypeId,
+                CustomerCode = added.CustomerCode,
                 FullName = added.FullName,
                 Email = added.Email,
                 TaxCode = added.TaxCode,
                 ShippingAddress = added.ShippingAddress,
                 Phone = added.Phone,
-                CustomerTypeId = added.CustomerTypeId
+                LastPurchaseDate = added.LastPurchaseDate,
+                ProductsSummary = added.ProductsSummary,
+                LatestProductName = added.LatestProductName,
+                CreatedAt = added.CreatedAt,
+                UpdatedAt = added.UpdatedAt,
+                DeletedAt = added.DeletedAt,
+                CustomerType = added.CustomerType != null ? new CustomerTypeDto
+                {
+                    Id = added.CustomerType.Id,
+                    TypeName = added.CustomerType.TypeName,
+                    Description = added.CustomerType.Description
+                } : null
             };
         }
 
@@ -52,12 +67,26 @@ namespace SalesManagementSystem.Application.Services
             var entities = await _customerRepository.GetAllAsync();
             return entities.Select(c => new CustomerRespone
             {
+                Id = c.Id,
+                CustomerTypeId = c.CustomerTypeId,
+                CustomerCode = c.CustomerCode,
                 FullName = c.FullName,
                 Email = c.Email,
                 TaxCode = c.TaxCode,
                 ShippingAddress = c.ShippingAddress,
                 Phone = c.Phone,
-                CustomerTypeId = c.CustomerTypeId
+                LastPurchaseDate = c.LastPurchaseDate,
+                ProductsSummary = c.ProductsSummary,
+                LatestProductName = c.LatestProductName,
+                CreatedAt = c.CreatedAt,
+                UpdatedAt = c.UpdatedAt,
+                DeletedAt = c.DeletedAt,
+                CustomerType = c.CustomerType != null ? new CustomerTypeDto
+                {
+                    Id = c.CustomerType.Id,
+                    TypeName = c.CustomerType.TypeName,
+                    Description = c.CustomerType.Description
+                } : null
             }).ToList();
         }
 
@@ -82,12 +111,26 @@ namespace SalesManagementSystem.Application.Services
 
             return new CustomerRespone
             {
+                Id = refreshed.Id,
+                CustomerTypeId = refreshed.CustomerTypeId,
+                CustomerCode = refreshed.CustomerCode,
                 FullName = refreshed.FullName,
                 Email = refreshed.Email,
                 TaxCode = refreshed.TaxCode,
                 ShippingAddress = refreshed.ShippingAddress,
                 Phone = refreshed.Phone,
-                CustomerTypeId = refreshed.CustomerTypeId
+                LastPurchaseDate = refreshed.LastPurchaseDate,
+                ProductsSummary = refreshed.ProductsSummary,
+                LatestProductName = refreshed.LatestProductName,
+                CreatedAt = refreshed.CreatedAt,
+                UpdatedAt = refreshed.UpdatedAt,
+                DeletedAt = refreshed.DeletedAt,
+                CustomerType = refreshed.CustomerType != null ? new CustomerTypeDto
+                {
+                    Id = refreshed.CustomerType.Id,
+                    TypeName = refreshed.CustomerType.TypeName,
+                    Description = refreshed.CustomerType.Description
+                } : null
             };
         }
 
@@ -103,12 +146,26 @@ namespace SalesManagementSystem.Application.Services
 
             var data = items.Select(c => new CustomerRespone
             {
+                Id = c.Id,
+                CustomerTypeId = c.CustomerTypeId,
+                CustomerCode = c.CustomerCode,
                 FullName = c.FullName,
                 Email = c.Email,
                 TaxCode = c.TaxCode,
                 ShippingAddress = c.ShippingAddress,
                 Phone = c.Phone,
-                CustomerTypeId = c.CustomerTypeId
+                LastPurchaseDate = c.LastPurchaseDate,
+                ProductsSummary = c.ProductsSummary,
+                LatestProductName = c.LatestProductName,
+                CreatedAt = c.CreatedAt,
+                UpdatedAt = c.UpdatedAt,
+                DeletedAt = c.DeletedAt,
+                CustomerType = c.CustomerType != null ? new CustomerTypeDto
+                {
+                    Id = c.CustomerType.Id,
+                    TypeName = c.CustomerType.TypeName,
+                    Description = c.CustomerType.Description
+                } : null
             }).ToList();
 
             return new PagedResponse<List<CustomerRespone>>
@@ -125,12 +182,26 @@ namespace SalesManagementSystem.Application.Services
 
             var data = items.Select(c => new CustomerRespone
             {
+                Id = c.Id,
+                CustomerTypeId = c.CustomerTypeId,
+                CustomerCode = c.CustomerCode,
                 FullName = c.FullName,
                 Email = c.Email,
                 TaxCode = c.TaxCode,
                 ShippingAddress = c.ShippingAddress,
                 Phone = c.Phone,
-                CustomerTypeId = c.CustomerTypeId
+                LastPurchaseDate = c.LastPurchaseDate,
+                ProductsSummary = c.ProductsSummary,
+                LatestProductName = c.LatestProductName,
+                CreatedAt = c.CreatedAt,
+                UpdatedAt = c.UpdatedAt,
+                DeletedAt = c.DeletedAt,
+                CustomerType = c.CustomerType != null ? new CustomerTypeDto
+                {
+                    Id = c.CustomerType.Id,
+                    TypeName = c.CustomerType.TypeName,
+                    Description = c.CustomerType.Description
+                } : null
             }).ToList();
 
             return new PagedResponse<List<CustomerRespone>>

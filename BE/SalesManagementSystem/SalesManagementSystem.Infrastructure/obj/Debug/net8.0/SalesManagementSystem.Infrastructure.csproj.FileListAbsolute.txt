@@ -17,3 +17,4 @@ D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Infrastructu
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Infrastructure\bin\Debug\net8.0\SalesManagementSystem.Application.pdb
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Infrastructure\bin\Debug\net8.0\SalesManagementSystem.Domain.dll
 D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Infrastructure\bin\Debug\net8.0\SalesManagementSystem.Domain.pdb
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Infrastructure\obj\Debug\net8.0\SalesManagementSystem.Infrastructure.sourcelink.json
