@@ -1,0 +1,15 @@
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\bin\Debug\net8.0\SalesManagementSystem.Application.deps.json
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\bin\Debug\net8.0\SalesManagementSystem.Application.dll
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\bin\Debug\net8.0\SalesManagementSystem.Application.pdb
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesManagementSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesManagementSystem.Application.AssemblyInfoInputs.cache
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesManagementSystem.Application.AssemblyInfo.cs
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesManagementSystem.Application.csproj.CoreCompileInputs.cache
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesManagementSystem.Application.dll
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\refint\SalesManagementSystem.Application.dll
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesManagementSystem.Application.pdb
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\ref\SalesManagementSystem.Application.dll
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\bin\Debug\net8.0\SalesManagementSystem.Domain.dll
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\bin\Debug\net8.0\SalesManagementSystem.Domain.pdb
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesManagementSystem.Application.csproj.AssemblyReference.cache
+D:\MISA\FinalProject\BE\SalesManagementSystem\SalesManagementSystem.Application\obj\Debug\net8.0\SalesMan.6BA7E359.Up2Date
